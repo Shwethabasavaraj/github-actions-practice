@@ -1,0 +1,17 @@
+name: Where is my code?
+
+on: [push]
+
+jobs:
+  show-path:
+    runs-on: ubuntu-latest
+
+  steps: 
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Show working directory
+      uses: pwd
+
+    - name: List files
+      uses: ls -la
