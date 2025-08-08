@@ -9,3 +9,6 @@ jobs:
     steps:
       - name: Say Hello
         run: echo "Hello from Github actions!"
+
+      - name: Show Date
+        run: date
